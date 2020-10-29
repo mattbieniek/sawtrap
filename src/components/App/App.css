@@ -1,0 +1,97 @@
+.app {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    max-width: 1920px;
+    max-height: 1080px;
+}
+
+.background {
+    position: absolute;
+}
+
+.timer {
+    position: absolute;
+    border: 3px solid black;
+    right: 0;
+    width: 10%;
+    height: 5%;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+.items {
+    width: 50%;
+    position: relative;
+}
+
+.showerhead {
+    position: absolute;
+    width: 10%;
+    height: 25%;
+    margin: 355px 275px;
+}
+
+.saw {
+    position: absolute;
+    width: 15%;
+    height: 5%;
+    margin: 805px 925px;
+}
+
+.trash {
+    position: absolute;
+    width: 5%;
+    height: 8%;
+    margin: 615px 905px;
+}
+
+.light {
+    position: absolute;
+    width: 20%;
+    height: 3%;
+    margin: 295px 720px;
+}
+
+.keypad {
+    position: absolute;
+    width: 5%;
+    height: 3%;
+    margin: 505px 1160px;
+}
+
+.riddle {
+    position: absolute;
+    margin: 0 28%;
+    top: 25%;
+    border: 3px solid black;
+    width: 40%;
+    height: 50%;
+    background-color: rgba(255, 128, 0, 0.8);
+}
+
+.count {
+    display: flex;
+    align-items:  center;
+    position: absolute;
+    bottom: 0;
+    width: 10%;
+    text-align: center;
+    height: 5%;
+}
+
+.count h3 {
+    height:  50%;
+}
+
+.numpad {
+    position: absolute;
+    margin: 0 500px;
+    top: 25%;
+    border: 3px solid black;
+    width: 25%;
+    height: 25%;
+    background-color: rgba(255, 128, 0, 0.8);
+}

@@ -1,0 +1,21 @@
+.video {
+	position:  absolute;
+	width:  35%;
+	height:  20%;
+	top:  60.5%;
+}
+
+.tv {
+	position:  absolute;
+	width:  15%;
+	height:  25%;
+	top:  60%;
+}
+
+.static {
+	position:  absolute;
+	width:  12%;
+	height:  16%;
+	top:  62%;
+	opacity:  0.75;
+}
