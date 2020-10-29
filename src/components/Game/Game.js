@@ -14,6 +14,7 @@ const theme = new Audio(song);
 
 export default function Game() {
 	const [slide, setSlide] = useState(true);
+	const [button, setButton] = useState(true);
 	const [transition, setTransition] = useState(false);
 	const [intro, setIntro] = useState(false);
 	const [trap, setTrap] = useState(false);
@@ -48,6 +49,7 @@ export default function Game() {
 	trap ? playMusic() : theme.pause();
 
 	const startIntro = () => {
+		setButton(false);
 		// Sets delay on click for intro to play
 		setTimeout(() => {
 			setTransition(true);
@@ -92,11 +94,11 @@ export default function Game() {
 			{slide ? <img src={trivia} alt="trivia" /> : null}
 			{transition && <Transition trans={transition} />}
 			{intro && <TvRoom intro={intro} />}
-			<button
+			{button && <button
 				className="button"
 				style={buttonStyle}
 				onClick={startIntro}
-			></button>
+			></button>}
 			{trap ? <App start={trap} time={time} win={winGame} /> : null}
 			{win && <TvRoom win={win} />}
 			{end && <div className="screen"></div>}
